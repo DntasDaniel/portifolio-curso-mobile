@@ -141,23 +141,46 @@
             <div class="enviar">
                 <section class="C-rodapé" >
                     <h3>Envie uma mensagem:</h3>
-                   <form action="mailto:contato.dantas.dev@gmail.com" class="form">
-                    <label for="nome"><strong>Nome</strong></label>
+                   <form class="form">
+                    <label for="nome"><strong>Nome:</strong></label>
                     <br>
                     <input class="entrada" type="text" name="nome" required>
-                    <div class="campo">
-                        <label>Sou pessoa:</label>
+                    <div class="campo"><br>
+                        <label>Sou pessoa:</label><br>
                         <label><input type="radio" name="pessoa" value="juridica">Juridica</label>
-                        <label><input type="radio" name="pessoa" value="fisica">fisica</label>
+                        <label><input type="radio" name="pessoa" value="fisica">Física</label><br>
+                    </div>
+                    <div><br>
+                        <label for="texto">Digite aqui sua mensagem:</label><br>
+                        <textarea class="entrada" type="text" name="texto" required></textarea>
                     </div>
                     <div>
-                        <label for="texto">Digite aqui sua mensagem</label>
-                        <br>
-                        <input class="entrada" type="text" name="texto" required>
+                        <p><strong>Tipo de contratação:</strong></p>
+                        <select name=”TipoDeServiço”>
+
+                            <option value=”Free”>Freelancer</option>
+                            
+                            <option value=”PJ”>Pessoa juridica </option>
+                            
+                            <option value=”CLT”>CLT</option>
+                            
+                            </select>
                     </div>
-                    <br>
+                    <div class="campo">
+                        <br><label>Qual é a área de atuação?</label>
+                        <br><br>
+                        <label>
+                        <input type="checkbox", name="dfda" value="1" > frontend </label>
+                        <label>
+                        <input type="checkbox", name="dfda" value="2"> backend </label>
+                        <label>
+                        <input type="checkbox", name="dfda" value="9"> fullstack </label>
+                    </div>
+
+                    <br><br>
                     <input class="btnform" type="submit" name="submit" value="Enviar">
                    </form>
+
                 </section>
             </div>
         </div>
@@ -333,6 +356,7 @@ a:hover{
     margin-bottom: 5rem;
     border: 2px solid #fff;
     border-radius:8px;
+    box-shadow: 0px 5px 5px 0px black;
   
 }
 
@@ -367,7 +391,6 @@ a:hover{
 
 .form{
     border-radius: 5px;
-    width: 40%;
     margin-top: 10px;
     border-radius: 5px;
     margin-bottom: 20px;
@@ -384,12 +407,17 @@ a:hover{
     border-radius: 5px;
     background: #ccc;
     transform: scale(1.1);
-    box-shadow: 0 5px 5px 0 gray;
+    
+}
+
+textarea {
+    height: 180px;
 }
 
 .entrada{
     border:2px solid black;
     border-radius: 3px;
+    width: 300px;
 }
 
 @media only screen and (max-width: 500px){
