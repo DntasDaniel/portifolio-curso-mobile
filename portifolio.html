@@ -80,21 +80,59 @@
         <div class="projeto">
             <h2 class="tituloprojeto">Projetos</h2>
             <div class="proj">
-                    <a class="cardproj pok" href="https://dntasdaniel.github.io/Jogo-de-Cartas/"  target="_blank">
-                            <h3> SUPER-TRUNFO - Git</h3>
-                    </a>
 
-                    <a class="cardproj forca" href="https://dntasdaniel.github.io/jogo-da-forca/" target="_blank">
-                        <h3> FORCA - Git</h3>
-                    </a>
+                <div class="cardi">
+                    <img alt="Pokemon" class="cardi__imagem" src="http://3.bp.blogspot.com/-og6UiSqjMVY/Uz86rbCFZ_I/AAAAAAAAEVw/5OjxfqQuJuA/s1600/nblast_04-04_pokemonblast.jpg" />
+                    <div class="cardi__conteudo">
+                        <h4 class="cardi__titulo">Super Trunfo</h4>
+                        <p class="cardi__descricao">Super Trunfo inspirado no pokemon.</p>
+                        <button class="cardi__botao">
+                            <a class="cardproj pok" href="https://dntasdaniel.github.io/Jogo-de-Cartas/"  target="_blank">
+                                CLIQUE AQUI
+                            </a>
+                        </button>
+                    </div>
+                </div>
 
-                    <a class="cardproj conversor" href="https://codepen.io/DantasDaniel/pen/wvPbZEJ">
-                        <h3> CONVERSOR - Codepen</h3>
-                    </a>
+                <div class="cardi">
+                    <img alt="Forca" class="cardi__imagem" src="https://images-na.ssl-images-amazon.com/images/I/517cKCRsu8L.png" />
+                    <div class="cardi__conteudo">
+                        <h4 class="cardi__titulo">Jogo da forca</h4>
+                        <p class="cardi__descricao">Jogo da forca em HTML, CSS e JS.</p>
+                        <button class="cardi__botao">
+                            <a class="cardproj forca" href="https://dntasdaniel.github.io/jogo-da-forca/"  target="_blank">
+                                CLIQUE AQUI
+                            </a>
+                        </button>
+                    </div>
+                </div>
 
-                    <a class="cardproj crip" href="https://codepen.io/dntasdaniel/pen/xxYJXLm">
-                        <h3> CRIPTOGRAFO - Codepen</h3>
-                    </a>
+                <div class="cardi">
+                    <img alt="Conversor" class="cardi__imagem" src="https://cdn.pixabay.com/photo/2022/03/01/02/51/galaxy-7040416_960_720.png" />
+                    <div class="cardi__conteudo">
+                        <h4 class="cardi__titulo">conversor</h4>
+                        <p class="cardi__descricao">Conversor de moeda usando JS.</p>
+                        <button class="cardi__botao">
+                            <a class="cardproj conversor" href="https://codepen.io/DantasDaniel/pen/wvPbZEJ"  target="_blank">
+                                CLIQUE AQUI
+                            </a>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="cardi">
+                    <img alt="crip" class="cardi__imagem" src="https://t.ctcdn.com.br/UHptf27DiK-LjzOl3Y5mdaCIGKQ=/880x495/smart/filters:format(webp)/i233803.jpeg" />
+                    <div class="cardi__conteudo">
+                        <h4 class="cardi__titulo">Criptógrafo</h4>
+                        <p class="cardi__descricao">Critógrafo, desafio da Alura.</p>
+                        <button class="cardi__botao">
+                            <a class="cardproj crip" href="https://codepen.io/dntasdaniel/pen/xxYJXLm"  target="_blank">
+                                CLIQUE AQUI
+                            </a>
+                        </button>
+                    </div>
+                </div>
+
             </div>
 
         </div>
@@ -113,8 +151,7 @@
                         <label><input type="radio" name="pessoa" value="fisica">fisica</label>
                     </div>
                     <div>
-                      <br>
-                        <label for="texto">Digite aqui sua mensagem:</label>
+                        <label for="texto">Digite aqui sua mensagem</label>
                         <br>
                         <input class="entrada" type="text" name="texto" required>
                     </div>
@@ -254,48 +291,72 @@ a:hover{
     flex-wrap: wrap;
 }
 
-.cardproj{
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    margin: 25px;
-    border: 1px solid black;
-    border-radius: 10px;
-    padding: 0%;
-    box-shadow: 0 4px 4px 4px gray;
-    
+.cardi__botao {
+    background: #8d0606;
+    border: none;
+    border-radius: 5px;
+    color: #fdfdfd;
+    padding: 1rem;
+    transition: all .1s ease-in-out;
 }
 
-.cardproj h3{
-    width: 210px;
-    height: 180px;
-    align-items: flex-start;
+.cardi__botao:hover {
+    background: #620404;
+    cursor: pointer;
+}
+
+.cardi__conteudo {
+    padding: 1rem;
+}
+
+.cardi__descricao {
+    font-size: 1.1875rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.cardi__imagem {
+    height: 250px;
+    border-radius: 5px;
+    margin:3px;
+}
+
+.cardi__titulo {
+    font-size: 1.4375rem;
+}
+
+.cardi{
+    margin-left: 1%;
+    background: #fdfdfd;
     display: flex;
-    justify-content: center;
-    font-size: medium;
-    padding-top: 5%;
+    flex-direction: column;
+    margin-bottom: 5rem;
+    border: 2px solid #fff;
+    border-radius:8px;
+  
 }
 
-.pok{
-    background-image: url("http://3.bp.blogspot.com/-og6UiSqjMVY/Uz86rbCFZ_I/AAAAAAAAEVw/5OjxfqQuJuA/s1600/nblast_04-04_pokemonblast.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    
+@media screen and (min-width: 0) {
+    .cardi {
+        margin-right: 1rem;
+        width: 100%;
+    }
 }
-
-.conversor{
-    background-image: url("https://cdn.pixabay.com/photo/2022/03/01/02/51/galaxy-7040416_960_720.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+@media screen and (min-width: 768px) {
+    .cardi {
+        margin-right: 2.5rem;
+        width: calc(33.33% - 2.5rem);
+    }
+}
+@media screen and (min-width: 992px) {
+    .cardi {
+        margin-right: 5rem;
+        width: calc(25% - 5rem);
+    }
 }
 
 .forca{
-    background-image: url("https://images-na.ssl-images-amazon.com/images/I/517cKCRsu8L.png");
-    background-repeat: no-repeat;
-    background-size: cover; 
-}
-
-.crip{
-    background-image: url("https://t.ctcdn.com.br/UHptf27DiK-LjzOl3Y5mdaCIGKQ=/880x495/smart/filters:format(webp)/i233803.jpeg");
+    background-image: url("");
     background-repeat: no-repeat;
     background-size: cover; 
 }
@@ -329,7 +390,6 @@ a:hover{
 .entrada{
     border:2px solid black;
     border-radius: 3px;
-    width:50%;
 }
 
 @media only screen and (max-width: 500px){
